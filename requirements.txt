@@ -1,0 +1,6 @@
+streamlit>=1.20
+pandas>=2.0
+numpy
+plotly
+sqlalchemy
+python-dateutil

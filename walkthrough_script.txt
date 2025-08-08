@@ -1,0 +1,27 @@
+Hi — I’m Aditya Rastogi. This is my submission for the Backend Developer Internship assignment: an investor-focused interactive dashboard that visualizes VAHAN vehicle registrations, with YoY and QoQ growth for categories and manufacturers.
+
+(0:18) What I built:
+- A Streamlit dashboard that reads registration data and allows date-range selection, vehicle-category and maker filters, and aggregation (monthly/quarterly/yearly).
+- It computes YoY and QoQ automatically and shows trend charts and downloadable CSVs.
+
+(0:40) How to run:
+- Clone the repo, install requirements (`pip install -r requirements.txt`), put a CSV at `data/vahan_data.csv`, and run `streamlit run src/app.py`.
+- If you don’t have a CSV, download maker/category CSV from India Data Portal or VAHAN public analytics (links in README).
+
+(1:05) Key UI demo:
+- Show sidebar controls: date range, aggregation, categories, makers.
+- Toggle aggregation to Quarterly and show QoQ numbers updating.
+- Select top makers and show trend lines and percent-change table.
+
+(2:20) Data provenance & collection:
+- I used the VAHAN public analytics as the source of truth and recommend using the India Data Portal mirror to avoid CAPTCHA issues. Links and instructions are in the README.
+
+(2:45) Key investor insights:
+- Example: EV/PE trends — electric vehicle registrations have X% YoY growth vs ICE in selected states (replace X with your computed number from your dataset).
+- Manufacturer consolidation — top 3 makers represent Y% of registrations in last 12 months (replace Y from the dashboard).
+- Seasonal patterns — registration dips in monsoon months result in QoQ declines; good for timing promotions/production planning.
+
+(3:30) Next steps / roadmap:
+- Add scheduled ETL, SQL storage, and forecasting models; add financial KPIs (revenue per registration) if fee data is available.
+
+(3:50) That’s it. Repo link & README are included. Thank you!
